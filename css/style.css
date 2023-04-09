@@ -1,61 +1,201 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jinhee's Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-    <div class="banner">
-        <div class="navBar">
-            <img src="/ima/logo.png" class="logo">
-            <ul>
-                <li><a href = "https://wlsl6569.github.io/">Home</a></li>
-                <li><a href = "/html/AboutMe.html">About me</a></li>
-                <li><a href = "/html/Project.html">Project</a></li>
-                <li><a href = "">Study</a></li>
-                <li><a href = "https://www.linkedin.com/in/jinhee-jeon-2a186a271/">Contact</a></li>
-            </ul>
-        </div>
-        <div class="content">
-
-
-
-
-
-  <div class="chatbot-a">     
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(/ima/background.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    width: 94%;
+    margin: auto;
+    padding: 2% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 15%;
+    cursor: pointer;
+    height: auto;
     
-       
-             <script src="/chatbot/response.js" defer></script>
-              <script src="/chatbot/app.js" defer></script>
-     <div class="container">
-        <div class="chat-body" word-break:normal ></div>
-       <div class="chat-input">
-          <div class="input-sec">
-            <input type="text" id="txtInput" placeholder="Typ here" autofocus />
-         </div>
-         <div class="send">
-           <img src="images/send.svg" alt="send" />
-          </div>
-        </div>
-      </div>
-    </div>   
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+    position:relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
 
+/*맨 아랫줄 */
+.navbar ul li::after {     
+    content: '';
+    width: 0px;
+    height: 2.66px;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -20%;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after {     
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+  
+}
+.content h1{
+    font-size: 3rem;
+    position: relative;
+    margin-top: 20%;
+    color: transparent;
+    -webkit-text-stroke:1px #fff;
+    background: url(/ima/lines.png);
+    -webkit-background-clip : text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
 
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
 
+.content p{
+    font-size: 1rem;
+    margin: 1% 10%;
+    line-height: 1.5;
 
+}
 
-
-            <h1>MY CODING LIFE</h1>
-            <p>"자기소개" 혹은 "기술"에 대해 물어봐주세요.<br/> 제 데이터를 기반으로 한 챗봇이 대답해줄거에요.</p>
-            <div>
-                <button type="button"><span></span>My Portfolio</button>
-                <button type="button"><span></span> Contact ME</button>
-            </div>
-        </div>
-
-    </div>
+button{
     
-</body>
-</html>
+    width:fit-content;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    margin-inline: 0.5%;
+    font-size: 1vw;
+    border-radius: 25px;
+    transition: 0.5s;
+    font-weight: bold;
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid #009688;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+
+.chabot-a{position: absolute;
+left: 50%;}
+
+
+
+
+.container {
+    height: 350px;
+    width: 450px;
+   /* background: var(--light-color);*/
+    position: absolute;
+    top: 30%; left: 48%;
+    margin: -150px 0px 0px -200px;
+    box-shadow: 0px 0px 15px 0px black;
+  }
+  .chat-header {
+    height: 00px;
+    display: flex;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: #0652c0;
+    color: var(--light-color);
+    font-size: 1.5rem;
+  }
+  
+ 
+  .chat-body {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 10px;
+    align-items: flex-end;
+    overflow-y:scroll;
+ 
+  }
+  .chat-input {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ccc;
+  }
+  .input-sec {
+    flex: 9;
+  }
+  .send {
+    flex: 1;
+    padding-right: 4px;
+  }
+  #txtInput {
+    line-height: 30px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    caret-color: black;
+    font-size: 1rem;
+    width: 100%;
+  }
+  
+  .chatbot-message,
+  .user-message {
+    padding: 8px;
+    width: auto;
+    background: #ccc;
+    margin: 5px;
+    width: max-content;
+    border-radius: 10px 3px 10px 10px;
+    word-break:break-all; 
+    overflow-wrap: break-word;
+    
+  }
+  .chatbot-message {
+    width: auto;
+    background: #0652c0;
+    color: var(--light-color);
+    align-self: flex-start;
+    border-radius: 10px 10px 3px 10px;
+    word-break:break-all; 
+    overflow-wrap: break-word;
+  }
