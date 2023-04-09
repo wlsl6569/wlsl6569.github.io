@@ -19,7 +19,7 @@
     justify-content: space-between;
 }
 .logo{
-    width: 10%;
+    width: 15%;
     cursor: pointer;
     height: auto;
     
@@ -61,7 +61,8 @@
 }
 .content h1{
     font-size: 3rem;
-    margin-top: 5%;
+    position: relative;
+    margin-top: 20%;
     color: transparent;
     -webkit-text-stroke:1px #fff;
     background: url(/ima/lines.png);
@@ -80,12 +81,14 @@
     font-size: 1rem;
     margin: 1% 10%;
     line-height: 1.5;
+
 }
 
 button{
-    width: 200px;
+    
+    width:fit-content;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px 20px;
     text-align: center;
     margin-inline: 0.5%;
     font-size: 1vw;
@@ -116,3 +119,6 @@ button:hover span{
 button:hover{
     border: none;
 }
+
+.chabot-a{position: absolute;
+left: 50%;}
