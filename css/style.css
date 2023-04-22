@@ -169,3 +169,9 @@ left: 50%;}
     word-break:break-all; 
     overflow-wrap: break-word;
   } 
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
