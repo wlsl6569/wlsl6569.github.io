@@ -23,7 +23,7 @@
     display: inline-block;
     list-style: none;
     margin: 0 20px;
-    position:relative;
+    position:absolute;
 }
 .navbar ul li a{
     text-decoration: none;
