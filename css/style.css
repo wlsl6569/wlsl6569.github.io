@@ -170,8 +170,23 @@ left: 50%;}
     overflow-wrap: break-word;
   } 
 
+
+# 창 줄어들 때 
+
 @media (max-width: 768px) {
   .navbar {
     display: none;
+  }
+}
+
+# 모바일
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    display: none;
+  }
+  
+  .navbar .hamburger {
+    display: block;
   }
 }
