@@ -11,8 +11,9 @@
     width: 100%;
 }
 .navbar{
-    padding : 0px;
-  
+  display: flex;
+  justify-content: space-between;
+
 }
 .logo{
     width: 10px;
