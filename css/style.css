@@ -169,3 +169,15 @@ left: 50%;}
     word-break:break-all; 
     overflow-wrap: break-word;
   } 
+
+  @media screen and (max-width: 768px) {
+    .container, .content h1, .content p {
+        display: none;
+    }
+}
+@media screen and (max-height: 500px) {
+    .container, .content h1, .content p {
+        display: none;
+    }
+}
+
