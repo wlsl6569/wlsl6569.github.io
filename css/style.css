@@ -71,6 +71,7 @@
     -webkit-background-clip : text;
     background-position: 0 0;
     animation: back 20s linear infinite;
+    transform: translate(0px,-20px);
 }
 
 @keyframes back{
@@ -172,9 +173,17 @@ left: 50%;}
   } 
 
   @media screen and (max-width: 768px) {
-    .container, .content h1, .content p {
-        width: 50%;
-    }.navbar ul li {display: none;}
+
+    .content h1{
+        font-size: 1.5rem;
+        transform: translate(40%, 0%);}
+    .container {
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        transform: translate(20%, 0%);
+    }
+    .navbar ul li {display: none;}
     
 }
     @media screen and (max-height: 400px) {
