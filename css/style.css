@@ -173,7 +173,7 @@ left: 50%;}
 
   @media screen and (max-width: 768px) {
     .container, .content h1, .content p {
-        display: none;
+        width: 50%;
     }.navbar ul li {display: none;}
     
 }
