@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100%;
+            background-color: #f0f0f0;
+        }
+        .header {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px 0;
+        }
+        .header .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 10px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: #000;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        .banner {
+            background-image: url('banner.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            position: relative;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .arrow {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+            color: #000;
+        }
+    </style>
 </head>
 <body>
-  <p>Hello, World!</p>
+
+    <div class="header">
+        <div class="logo">UA</div>
+        <div class="nav">
+            <a href="#about">About ME</a>
+            <a href="#projects">Projects</a>
+            <a href="#interest">Interest</a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <!-- Add your image here -->
+        <div class="arrow">&#9660;</div>
+    </div>
+
 </body>
 </html>
