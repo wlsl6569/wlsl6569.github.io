@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interest</title>
+    <title>My Portfolio</title>
     <style>
         body, html {
             margin: 0;
@@ -23,6 +23,10 @@
             color: #000;
             margin-bottom: 10px;
         }
+        .header .logo a {
+            text-decoration: none;
+            color: inherit;
+        }
         .nav {
             display: flex;
             justify-content: center;
@@ -34,26 +38,32 @@
             margin: 0 15px;
             font-size: 18px;
         }
-        .content {
-            padding: 40px;
-            text-align: center;
+        .banner {
+            background-image: url('banner.jpg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            position: relative;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
 
     <div class="header">
-        <div class="logo">UA</div>
+        <div class="logo"><a href="index.html">JINNY.AI</a></div>
         <div class="nav">
-            <a href="index.html">Home</a>
             <a href="about.html">About ME</a>
             <a href="projects.html">Projects</a>
+            <a href="interest.html">Interest</a>
         </div>
     </div>
 
-    <div class="content">
-        <h1>Interest</h1>
-        <p>This is the Interest page. You can describe your interests here.</p>
+    <div class="banner">
+        <!-- Add your image here -->
     </div>
 
 </body>
